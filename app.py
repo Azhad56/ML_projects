@@ -11,7 +11,7 @@ app = Flask(__name__)
 def home():
 	return render_template('home.html')
 
-@app.route('/predict',methods=['GET','POST'])
+@app.route('/predict',methods=['POST'])
 def predict():
     df=pd.read_csv('Data/Real_Data/real_2018.csv')
     df.drop(labels = 'T',axis= 1,inplace = True)
