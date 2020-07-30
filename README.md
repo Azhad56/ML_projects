@@ -12,4 +12,4 @@
 - Applied Xgboost regressor using hyperparameter tunning(Not  Better than Random forest regressor) 
 - So Random forest is best model till now
 - Ann applied but still random forest is best model of them
-
+- Model Deployed on heroku using flask
