@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Home</title>
-	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<! -- <link rel="stylesheet" type="text/css" href="/home/azhad56/Desktop/Ml_projects/static/styles.css"> -->
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
@@ -19,7 +19,7 @@
 
 	<div class="ml-container">
 
-		<form action="{{ url_for('predict')}}" method="POST">
+		<form action="{{ url_for('predictcsv')}}" method="POST">
 		<p>Click the Predict Button</p>
 		<!-- <input type="text" name="comment"/> -->
 		<textarea name="message" rows="6" cols="50"></textarea>
@@ -30,8 +30,24 @@
 	</form>
 		
 	</div>
-
-	
+	<div id="aqi_pred">
+	<h2> Weather prediction for single example </h2>
+		<form action="{{ url_for('predictexample')}}" method="POST">
+		  <label for="fname">TM:</label>
+		  <input type="number" id="TM" name="TM" required><br><br>
+		  <label for="fname">Tm:</label>
+		  <input type="number" id="Tm" name="Tm" required><br><br>
+		  <label for="fname">H:</label>
+		  <input type="number" id="H" name="H" required><br><br>
+		  <label for="fname">VV:</label>
+		  <input type="number" id="VV" name="VV" required><br><br>
+		  <label for="fname">V:</label>
+		  <input type="number" id="V" name="V" required><br><br>
+		  <label for="fname">VM:</label>
+		  <input type="number" id="VM" name="VM" required><br><br>
+		  <input type="submit" value="Submit">
+		</form> 
+	</div>
 	
 
 </body>

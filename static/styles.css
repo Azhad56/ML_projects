@@ -11,8 +11,8 @@ body{
 }
 
 header{
-	background:#03A9F4;#35434a;
-	border-bottom:#448AFF 3px solid;
+	background:green;
+	border-bottom:red 3px solid;
 	height:120px;
 	width:100%;
 	padding-top:30px;
@@ -53,4 +53,20 @@ header h2{
     padding: 20px; 
     width: 200px;
     height: 150px;
+}
+.ml-container
+{
+	margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  background-color:green;
+}
+#aqi_pred
+{
+	margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  background-color:green;
 }
